@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    <input type="text" Id="Nota1">
+    <input type="text" Id="Nota2">
+    <button onclick="exibeDadoDigitado()">clik </button>
+    </button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var NotaV1 =document.getElementById("Nota1").value;
+            var NotaV2 =document.getElementById("Nota2").value;
+            NV1 = Number (NotaV1);
+            NV2 = Number (NotaV2);
+            Soma_Nv1_Nv2 = (NV1 + NV2);
+            Divide_Nv1_Nv2 = (Soma_Nv1_Nv2 / 2);
+            
+        alert ("A média entre " + NotaV1 + " e " + NotaV2 + " é igual a " + Divide_Nv1_Nv2 );
+        }
+    </script>
+</body>
+</html>

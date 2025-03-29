@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    <input type="text" Id="numero1">
+    <input type="text" Id="numero2">
+    <button onclick="exibeDadoDigitado()">clik </button>
+    </button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var ResultadoSoma1 =document.getElementById("numero1").value;
+            var ResultadoSoma2 =document.getElementById("numero2").value;
+            NM1 = Number (ResultadoSoma1);
+            NM2 = Number (ResultadoSoma2);
+            ResultadoSomaNumeros = NM1 + NM2
+        alert ("A soma entre " + ResultadoSoma1 + " e " + ResultadoSoma2 + " é igual a " + ResultadoSomaNumeros );
+        }
+    </script>
+</body>
+</html>
