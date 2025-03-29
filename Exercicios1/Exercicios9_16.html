@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="numero">
+    <button onclick="exibeDadoDigitado()">clik nim mim</button>
+    </button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var Valor_Reais = document.getElementById("numero").value;
+            Valor_tranforme = Number (Valor_Reais );
+            Valor_Converter_Dolar = Valor_Reais * 5.76
+            alert("US$ " + Valor_Converter_Dolar);
+        }
+    </script>
+</body>
+</html>
