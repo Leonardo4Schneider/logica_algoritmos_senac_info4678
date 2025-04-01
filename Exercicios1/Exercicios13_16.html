@@ -7,18 +7,16 @@
 </head>
 <body>
     
-    <input type="text" id="numero">
+    <input type="text" id="preço">
     <button onclick="exibeDadoDigitado()">clik nim mim</button>
     </button>
 
     <script>
         function exibeDadoDigitado(){
-            var  numero1= document.getElementById("numero").value;
-            var Numero = Number (numero1)
-            var NumeroMenos1 = (Numero - 1);
-            var NumeroMais1 = (Numero + 1);
-
-            alert("O antecessor de " + numero1 + " é " + NumeroMenos1 + ". O sucessor de " + numero1 + " é " + NumeroMais1) ;
+            var Preço = document.getElementById("preço").value;
+            var Calculo = 100 * 5 /Preço
+            
+            alert(Calculo);
         }
     </script>
 </body>

@@ -16,9 +16,11 @@
         function exibeDadoDigitado(){
             var Largura1 = document.getElementById("largura").value;
             var Altura1 = document.getElementById("altura").value;
-            Largura1_Converte = Number (Largura1);
-            Altura1_Converte = Number (Altura1);
-            alert();
+            var Largura1_Converte = Number (Largura1);
+            var Altura1_Converte = Number (Altura1);
+            var AreaPintada = Altura1_Converte * Largura1_Converte;
+            var LitrosTinta = AreaPintada / 2 ;
+            alert(AreaPintada + "m² A área a ser pintada, " + " e a quantidade de tinta necessária para o serviço é de " + LitrosTinta + " litros de tinta");
         }
     </script>
 </body>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="Letra1">
+    <input type="text" id="Letra2">
+    <input type="text" id="Letra3">
+    <button onclick="exibeDadoDigitado()">clik nim mim</button>
+    </button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var letra1 = document.getElementById("Letra1").value;
+            var letra2 = document.getElementById("Letra2").value;
+            var letra3 = document.getElementById("Letra3").value;
+            var letra2aoQuadrado = letra2 * letra2
+            var Calculo = letra2aoQuadrado - 4 * letra1 * letra3
+            alert(Calculo);
+
+        }
+    </script>
+</body>
+</html>
