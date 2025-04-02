@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="Cigarros">
+    <input type="text" id="Anos">
+    <button onclick="exibeDadoDigitado()">clik nim mim</button>
+    </button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var cigarros = document.getElementById("Cigarros").value;
+            var anos = document.getElementById("Anos").value;
+            var calculo = cigarros * 10
+            var calculo2 = anos * 365
+            var calculo3 = calculo * calculo2
+            var calculo4 = calculo3 / 1440
+            alert(calculo4);
+        }
+    </script>
+</body>
+</html>
