@@ -14,9 +14,10 @@
     <script>
         function exibeDadoDigitado(){
             var Preço = document.getElementById("preço").value;
-            var Calculo = 5/100 * Preço
+            var Calculo = Preço * 0.05
+            var calculo2 = Preço - Calculo
             
-            alert(Calculo);
+            alert(calculo2);
         }
     </script>
 </body>

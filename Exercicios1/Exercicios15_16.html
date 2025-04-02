@@ -7,16 +7,16 @@
 </head>
 <body>
     
-    <input type="text" id="DiasTrabalhados">
+    <input type="text" id="Dias">
     <button onclick="exibeDadoDigitado()">clik nim mim</button>
     </button>
 
     <script>
         function exibeDadoDigitado(){
-            var Salario = document.getElementById("DiasTrabalhados").value;
-            SalarioConverter = Number (Salario);
-            Calculo = 8 / 25 * SalarioConverter ;
-            alert(Calculo);
+            var dias = document.getElementById("Dias").value;
+            var calculo = 8 * 25
+            var calculo2 = dias * calculo
+            alert(calculo2);
         }
     </script>
 </body>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="Quilometros">
+    <input type="text" id="Dias">
+    <button onclick="exibeDadoDigitado()">clik nim mim</button>
+    </button>
+
+    <script>
+        function exibeDadoDigitado(){
+            var quilometros = document.getElementById("Quilometros").value;
+            var dias = document.getElementById("Dias").value;
+            var Calculo = 90 * dias
+            var Calculo2 = 0.20 * quilometros
+            var CalculoTranforme = Number (Calculo)
+            var Calculo2Transforme = Number (Calculo2)
+            var CalculoFinal = (Calculo + Calculo2)
+           
+            
+            alert(CalculoFinal);
+        }
+    </script>
+</body>
+</html>
