@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="AnoNascimento" value="">
+    <button onclick="VerificarVelocidade()">clik nim mim</button>
+    </button>
+
+    <script>
+        function VerificarVelocidade(){
+            var AnoNascimento = Number(document.getElementById("AnoNascimento").value);
+            var CalculoParaDescobrirAIdade = (2025-AnoNascimento );
+            if(CalculoParaDescobrirAIdade >= 18){
+            
+            alert("Você pode votar");
+
+
+        }else{alert ("Você não pode votar!");
+
+        }
+           
+        }
+    </script>
+</body>
+</html>
