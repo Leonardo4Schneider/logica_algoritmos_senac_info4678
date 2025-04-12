@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="AnoNascimento" value="">
+    <button onclick="VerificarOAnoQueFaltaParaOAlistamentoMilitar()">clik nim mim</button>
+    </button>
+
+    <script>
+        function VerificarOAnoQueFaltaParaOAlistamentoMilitar(){
+            var AnoNascimento = Number(document.getElementById("AnoNascimento").value);
+            var calculo = 2025 - AnoNascimento;
+            var calculo2 = calculo - 18;
+            var calculoMenor18 = 18 - calculo;
+
+            
+
+
+            if(calculo <18){
+           
+            alert("faltam " + calculoMenor18 + " ano para o alistamento");
+
+
+        }else{alert ("Já se passaram " + calculo2 + " para o alistamento");
+
+        }
+           
+        }
+    </script>
+</body>
+</html>

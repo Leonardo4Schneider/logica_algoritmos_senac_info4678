@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="Ano" value="">
+    <button onclick="VerificarSeESSEAnoÉBISSEXTO()">clik nim mim</button>
+    </button>
+
+    <script>
+        function VerificarSeESSEAnoÉBISSEXTO(){
+            var Ano = Number(document.getElementById("Ano").value);
+            var AnoBISSEXTO = Ano % 4
+            var AnoBISSEXTOCOMPLETO = AnoBISSEXTO % 100;
+            if(  AnoBISSEXTO <1 ){
+            
+            alert(Ano + " Esse ano é um Bissexto");
+
+
+        }else{alert (Ano + " Esse ano não é um Bissexto");
+
+        }
+           
+        }
+    </script>
+</body>
+</html>
