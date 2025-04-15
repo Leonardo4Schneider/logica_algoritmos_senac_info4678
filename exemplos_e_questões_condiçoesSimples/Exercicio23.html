@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <input type="text" id="Ano" value="">
+    <input type="text" id="nome" value="">
     <input type="text" id="Genero" value="">
     <input type="text" id="Valor" value="">
     <button onclick="VerificarOGeneroEDarODesconto()">clik nim mim</button>
@@ -15,15 +15,22 @@
 
     <script>
         function VerificarOGeneroEDarODesconto(){
-            var Ano = Number(document.getElementById("Ano").value);
+            var Nome = (document.getElementById("nome").value);
+            var Genero = (document.getElementById("Genero").value);
             var Valor = Number(document.getElementById("Valor").value);
-            var Calculo5deDesconto
-            if(){
+            var CalculoDescontoHomem1 = Valor * 0.05 ;
+            var CalculoDescontoHomem2 = Valor - CalculoDescontoHomem1 ;
+            var CalculoDescontoMulher1 = Valor * 0.13;
+            var CalculoDescontoMulher2 = Valor - CalculoDescontoMulher1;
+
             
-            alert("Você foi multado. Valor à pagar: "+ ValorMulta);
+            
+            if(Genero == "Homem"){
+            
+            alert(Nome + " o valor da sua compra deu " + CalculoDescontoHomem2 + " com o desconto");
 
 
-        }else{alert ("Parabéns, você está dentro do limite de velocidade permitido!");
+        }else{alert (Nome + " o valor da sua compra deu " + CalculoDescontoMulher2 + " com o desconto");
 
         }
            

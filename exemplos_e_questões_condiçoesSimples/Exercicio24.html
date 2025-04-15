@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="Distancia" value="">
+    <button onclick="CalcularVelocidade()">clik nim mim</button>
+    </button>
+
+    <script>
+        function CalcularVelocidade(){
+            var Distancia = Number(document.getElementById("Distancia").value);
+            var CalculoDistancia200km = Distancia * 0.50;
+            var CalculoDistanciaMaior = Distancia * 0.45;
+            if(Distancia <= 200){
+            
+            alert("O preço da passagem é " + CalculoDistancia200km + " Reais");
+
+
+        }else{alert ("O preço da passagem é " + CalculoDistanciaMaior);
+
+        }
+           
+        }
+    </script>
+</body>
+</html>
