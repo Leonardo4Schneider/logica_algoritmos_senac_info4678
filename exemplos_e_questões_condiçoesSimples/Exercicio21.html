@@ -15,32 +15,28 @@
         function VerificarSeESSEAnoÉBISSEXTO(){
             var Ano = Number(document.getElementById("Ano").value);
             var AnoBISSEXTO4 = Ano % 4
-            var AnoBISSEXTO100 = AnoBISSEXTO % 100;
-            var AnoBISSEXTO400 = anoBissexto % 400;
-            if(  AnoBISSEXTO4 <1 ){
-            if(AnoBISSEXTO100 <1){
-            if(AnoBISSEXTO400 <1){
-            alert ("O ano " + Ano + "é um ano Bissexto")
-            
-            }else{alert ("");}          
-            }else{alert ("");}  
-            }else{alert ("Esse ano " + Ano + "não é um ano bissexto");}
-                    
-
-                    
-
-                
-            
-
-            
+            var AnoBISSEXTO100 = Ano % 100;
+            var AnoBISSEXTO400 = Ano % 400;
           
+            if(AnoBISSEXTO4 == 0) {
+                if (AnoBISSEXTO100 == 0) {
 
-        
-        
+                }else{
+
+                }
+                if (AnoBISSEXTO400 == 0) {
+               alert(Ano + " não é um ano BISSEXTO");
+                }else{
+
+                }
+                 }else
+                 alert(Ano + " é um ano BISSEXTO");
+                 {
 
         }
-           
         
+           
+        }
     </script>
 </body>
 </html>
