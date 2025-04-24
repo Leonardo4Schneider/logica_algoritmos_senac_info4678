@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="LarguraTerrenoRetangular" value="">
+    <input type="text" id="ComprimentoTerrenoRetangular" value="">
+    
+    <button onclick="CalcularclassificaçãoTerreno()">clik nim mim</button>
+    </button>
+
+    <script>
+        function CalcularclassificaçãoTerreno(){
+        
+            var LarguraTerrenoRetangular = Number(document.getElementById("LarguraTerrenoRetangular").value);
+            var ComprimentoTerrenoRetangular = Number(document.getElementById("ComprimentoTerrenoRetangular").value);
+            var CalculoAreaMetroQuadrado = (LarguraTerrenoRetangular * ComprimentoTerrenoRetangular);
+            
+
+          if(CalculoAreaMetroQuadrado < 100){
+           alert("TERRENO POPULAR ");
+        
+        }else if ( CalculoAreaMetroQuadrado < 100 && CalculoAreaMetroQuadrado < 500 ){
+            alert("TERRENO MASTER  ");
+        }else{(CalculoAreaMetroQuadrado > 500 )
+            alert("TERRENO VIP  ");
+        }
+
+
+           }
+          
+        </script>
+</body>
+</html>

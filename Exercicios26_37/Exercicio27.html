@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="nota1" value="">
+    <input type="text" id="nota2" value="">
+    
+    <button onclick="CalcularMediaDoAluno()">clik nim mim</button>
+    </button>
+
+    <script>
+        function CalcularMediaDoAluno(){
+        
+            var Nota1 = Number(document.getElementById("nota1").value);
+            var Nota2 = Number(document.getElementById("nota2").value);
+            var CalculoMedia = (Nota1 + Nota2) / 2;
+            
+
+          if(CalculoMedia < 5){
+           alert("REPROVADO ");
+        
+        }else if ( 4.9 < CalculoMedia && CalculoMedia < 7){
+            alert("RECUPERAÇÃO ");
+        }else{(CalculoMedia > 6.9)
+            alert("APROVADO ");
+        }
+
+
+          
+            
+          
+          
+
+        
+
+
+
+
+
+
+
+
+
+          }
+          
+        </script>
+</body>
+</html>
