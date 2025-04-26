@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="Nome" value="">
+    <input type="text" id="Salario" value="">
+    <input type="text" id="AnosTrabalhados" value="">
+    
+    <button onclick="CalculandoNovoSalarioConformeAnosTrabalhados()">clik nim mim</button>
+    </button>
+
+    <script>
+        function CalculandoNovoSalarioConformeAnosTrabalhados(){
+        
+            var Nome = (document.getElementById("Nome").value);
+            var Salario = Number(document.getElementById("Salario").value);
+            var AnosTrabalhados = Number(document.getElementById("AnosTrabalhados").value);
+           
+            
+            
+
+          if(AnosTrabalhados <= 3){
+           alert(Nome + " Seu salario foi aumentado para " + (Salario * 0.03 + Salario));
+        
+        }else if (AnosTrabalhados > 3 && AnosTrabalhados < 10){
+            alert(Nome + " .Seu salario foi aumentado para " + (Salario * 0.125 + Salario));
+        }else{(AnosTrabalhados >= 10)
+            alert(Nome + " .Seu salario foi aumentado para " + (Salario + 0.2 + Salario));
+        }
+
+
+    }
+          
+        </script>
+</body>
+</html>
