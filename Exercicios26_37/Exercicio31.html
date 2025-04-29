@@ -11,45 +11,52 @@
     <input type="text" id="Nome2" value="">
     
     
-    <button onclick="FazendoJogoJokenPo()">clik nim mim</button>
+    <button onclick="FazendoJogo()">clik nim mim</button>
     </button>
 
     <script>
-        function FazendoJogoJokenPo(){
+        function FazendoJogo(){
         
             var Nome1 = (document.getElementById("Nome1").value);
             var Nome2 = (document.getElementById("Nome2").value);
+            
             
           
             
             
 
-          if(Nome1 == Pedra && Nome2 == Tesoura){
-           alert("Você ganhou");
+          if("Pedra" == Nome1 && "Tesoura" == Nome2){
+           alert("Pedra ganha de Tesoura");
         
-        }else if (Nome1 == Tesoura && Nome2 == Pedra){
-            alert();
+        }else if ("Tesoura" == Nome1 && "Pedra" == Nome2){
+            alert("Tesoura perde de Pedra");
 
-        }else if (Nome1 == Pedra && Nome2 == Papel){
-            alert();
+        }else if (Nome1 == "Pedra" && Nome2 == "Papel"){
+            alert("Pedra perde de papel");
 
-        }else if (Nome1 == Papel && Nome2 == Pedra){
-            alert();
+        }else if (Nome1 == "Papel" && Nome2 == "Pedra"){
+            alert("Papel ganha de Pedra");
+            
+        }else if (Nome1 == "Papel" && Nome2 == "Tesoura"){
+            alert("Papel perde de Tesoura");
 
-        }else if (){
-            alert();
+        }else if (Nome1 == "Tesoura" && Nome2 == "Papel"){
+            alert("Tesoura ganha de Papel");
 
+        }else{(Nome1 == "Tesoura" && Nome2 == "Tesoura" || Nome1 == "Papel" &&  Nome2 == "Papel" || Nome1 == "Pedra" && Nome2 == "Pedra" || Nome1 == "Tesoura" && Nome2 == "Tesoura")
+            alert("Deu Empate");
+        }
+        
             
 
             
 
 
-        }else{()
-            alert(Nome + " .Seu salario foi aumentado para " + (Salario + 0.2 + Salario));
+        
         }
 
 
-    }
+    
           
         </script>
 </body>
