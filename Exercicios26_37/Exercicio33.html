@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="ValorDaCasa" value="">
+    <input type="text" id="SalarioComprador" value="">
+    <input type="text" id="QuantosAnosVaiPagar" value="">
+    
+    <button onclick="CalculandoNovoSalarioConformeAnosTrabalhados()">clik nim mim</button>
+    </button>
+
+    <script>
+        function CalculandoNovoSalarioConformeAnosTrabalhados(){
+        
+            var ValorDaCasa = (document.getElementById("ValorDaCasa").value);
+            var SalarioComprador = Number(document.getElementById("SalarioCompra").value);
+            var QuantosAnosVaiPagar = Number(document.getElementById("QuantosAnosVaiPagar").value);
+            var calculo = SalarioComprador * 0.3 
+            var calculo2 = calculo + SalarioComprador
+           
+            
+            
+
+            if (calculo2 < SalarioComprador ){
+            
+            alert ("Foi aprovado") 
+                
+            }else{
+
+                alert ("Você foi aprovado")
+
+            }
+
+
+        }
+          
+        </script>
+</body>
+</html>
