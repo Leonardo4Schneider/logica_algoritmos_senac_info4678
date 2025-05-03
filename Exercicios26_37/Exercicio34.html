@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira aula de algoritimos</title>
+    
 </head>
 <body>
     
@@ -11,29 +11,32 @@
     <input type="text" id="Altura" value="">
     
     
-    <button onclick="FazendoJogo()">clik nim mim</button>
+    <button onclick="CalculoDoIMC()">clik nim mim</button>
     </button>
 
     <script>
-        function FazendoJogo(){
-        
-            var Peso = (document.getElementById("Peso").value);
-            var Altura = (document.getElementById("Altura").value);
-            var CalculoIMC = Peso / (Altura * Altura);
+        function CalculoDoIMC()
+        {   
+            var Peso = Number(document.getElementById("Peso").value);
+            var Altura = Number(document.getElementById("Altura").value);
+            
+            var CalculoIMC = (Peso/(Altura * Altura));
 
-            
-            
-          
-            
-            
-
-          
-            
-
-            
-
-
-        
+            if (CalculoIMC < 18.5)
+            {
+                alert ("Abaixo do peso ");
+            }else if ( 18.5 <= CalculoIMC && CalculoIMC <= 25)
+            {
+                alert ("Peso ideal");
+            }else if (25 < CalculoIMC && CalculoIMC <= 30)
+            {
+                alert ("Sobrepeso");
+            }else if (30 < CalculoIMC && CalculoIMC <= 40)
+            {
+                alert ("Obesidade");    
+            }else{
+                alert ("Obseidade mórbida");
+            }         
         }
 
 
