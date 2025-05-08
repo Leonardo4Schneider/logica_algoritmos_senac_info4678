@@ -9,11 +9,25 @@
     <script>
         window.onload = function(){
             var TodosOsNumeros = " ";
+            
           
-            for(var i = 30; i > 0; i-- ){
-                TodosOsNumeros = TodosOsNumeros + i + " "
+           for(var i = 30 ;i > 0 ; i--) {
+                if(i%4 == 0){
+                    TodosOsNumeros = TodosOsNumeros + "["+i+"] "+ "" 
                 
-            }
+         
+                }else{
+                    TodosOsNumeros = TodosOsNumeros + i + " " 
+                }
+
+
+
+                }
+                
+               
+                
+                
+            
             console.log(TodosOsNumeros + "Acabou!");
             
         }
