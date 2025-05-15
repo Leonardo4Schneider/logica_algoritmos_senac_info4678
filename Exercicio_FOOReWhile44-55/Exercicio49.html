@@ -8,15 +8,25 @@
 <body>
     <script>
         window.onload = function(){
+             
             var TodosOsNumeros = " ";
-            for(var i = 0; i < 8; i++){
+            for(var i = 0; i <= 6 ; i ++){
                 var DigiteOPrimeiroValor = parseInt(prompt("Digite um valor"));
-                TodosOsNumeros = TodosOsNumeros + i + " "
+                var CalculoParaDescobrirParOuImpar = DigiteOPrimeiroValor % 2;
+                //tem que fazer divisivel por 2 e contar quantos numeros é par e qunatos são impar
                 
+                    
+                if (CalculoParaDescobrirParOuImpar < 1) {
+                    DigiteOPrimeiroValor = "Numero par"
+                }else {
+                    DigiteOPrimeiroValor = "Numero impar"                   
+                }
+            
+            }
             }
             console.log(TodosOsNumeros + "Acabou!");
             
-        }
+        
     </script>
 </body>
 </html
