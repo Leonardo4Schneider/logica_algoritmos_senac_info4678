@@ -2,29 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
         window.onload = function(){
-             
-            var TodosOsNumeros = " ";
-            for(var i = 0; i <= 6 ; i ++){
+            
+             var impar = 0
+             var par = 0
+            
+            for(var i = 0; i < 6 ; i ++){
                 var DigiteOPrimeiroValor = parseInt(prompt("Digite um valor"));
-                var CalculoParaDescobrirParOuImpar = DigiteOPrimeiroValor % 2;
-                //tem que fazer divisivel por 2 e contar quantos numeros é par e qunatos são impar
-                
+
+                if (DigiteOPrimeiroValor %2 === 0) 
+                {
+                   par++
                     
-                if (CalculoParaDescobrirParOuImpar < 1) {
-                    DigiteOPrimeiroValor = "Numero par"
-                }else {
-                    DigiteOPrimeiroValor = "Numero impar"                   
+                }
+                else 
+                {
+                    impar++
+                                 
                 }
             
             }
+              console.log("Numeros pares " + par + " e numeros impar " + impar);
             }
-            console.log(TodosOsNumeros + "Acabou!");
             
         
     </script>
