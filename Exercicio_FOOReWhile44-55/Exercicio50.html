@@ -8,25 +8,45 @@
 <body>
     
      <script>
+      
        window.onload = function(){
-            var NumeroSorte = ""
+           
+            var NSorte = " "
+            var DivisivelPor3 = " "
+            var MaiorQueCinco = " "
+           
             for(var i = 0; i < 21 ; i ++){
                 
-            var NumeroSorte = Math.floor (Math.random()* 10) + 0
-        
-        if (  NumeroSorte)
-        {
-            
-                
-
-            }
-            else
-            { 
+             var NumeroSorte = Math.floor(Math.random()* 10) + 1
+             
+              var NSorte =+ " " + NumeroSorte
               
-            }
+              
 
+              if (NSorte > 5){
+                
+                var MaiorQueCinco = " Esse numero é maior que 5"
+
+              }
+              else
+              {
+                 var MaiorQueCinco = " "
+              }
+
+              if (NSorte %3 === 0 )
+              {
+                DivisivelPor3 = " Esse numero é divisivel por 3"
+              }
+              else
+              {
+                DivisivelPor3 = ""
+              }
+
+               
+        
+            console.log(NSorte + " " + MaiorQueCinco + " " + DivisivelPor3);
           }
-          console.log(NumeroSorte);
+          
         }
 
     
